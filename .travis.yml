@@ -1,7 +1,11 @@
 language: ruby
-jobs:
-  include:
-     - stage: ONE-1
-       os: ubuntu
-       script: ruby ./hello.rb
-       script: env
+script:
+- ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
+deploy:
+  provider: pages
+  token: "$GITHUB_TOKEN"
+  # dpl_version: 2.0.3.beta.4
+  # edge: true
+  on:
+    branch:
+    - deploy
