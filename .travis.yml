@@ -11,3 +11,8 @@ deploy:
   provider: pages
   token: "$GITHUB_TOKEN"
   dpl_version: 1.10.16
+  on:
+    branch:
+    - main
+    - deploy
+    - DEPLOY-V2
