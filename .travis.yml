@@ -15,4 +15,4 @@ deploy:
     branch:
     - main
     - deploy
-    - DEPLOY-V2
+    - deploy-v2
