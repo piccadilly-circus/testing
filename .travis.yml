@@ -10,3 +10,4 @@ deploy:
   # provider: pages:git
   provider: pages
   token: "$GITHUB_TOKEN"
+  dpl_version: 1.10.16
