@@ -4,3 +4,4 @@ jobs:
      - stage: ONE-1
        os: ubuntu
        script: ruby ./hello.rb
+       script: env
