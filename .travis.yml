@@ -1,1 +1,6 @@
-echo "hello"
+language: ruby
+jobs:
+  include:
+     - stage: ONE-1
+       os: ubuntu
+       script: ruby ./hello.rb
