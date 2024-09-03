@@ -1,16 +1,9 @@
 language: ruby
 script:
 - ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
-before_deploy:
-  # check uri gem version
-  # - gem list uri
-  # update uri gem
-  # - gem update uri
 deploy:
-  # provider: pages:git
   provider: pages
   token: "$GITHUB_TOKEN"
-  # dpl_version: 1.10.16
   on:
     branch:
     - main
